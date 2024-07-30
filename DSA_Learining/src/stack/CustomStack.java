@@ -41,4 +41,15 @@ public class CustomStack {
     public boolean isEmpty() {
     	return ptr==-1;
     }
+    
+    public int size() {
+        return ptr + 1;
+    }
+    public int[] toArray() {
+    	int[] stackArray=new int[ptr+1];
+    	for(int i=0;i<=ptr;i++) {
+    		stackArray[i]=data[i];
+    	}
+    	return stackArray;
+    }
 }
