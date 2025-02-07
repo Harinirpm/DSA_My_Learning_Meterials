@@ -45,6 +45,7 @@ public class CustomStack {
     public int size() {
         return ptr + 1;
     }
+    
     public int[] toArray() {
     	int[] stackArray=new int[ptr+1];
     	for(int i=0;i<=ptr;i++) {
